@@ -1,0 +1,481 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    // background: #020A18;
+    // display: block;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: #292F36;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.top {
+    overflow: hidden;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.center2 {
+    padding-left: calc(50% - $widthContent / 2);
+    padding-right: calc(50% - $widthContent / 2);
+}
+
+.head {
+    display: flex;
+    gap: 780px;
+    margin-top: 52px;
+    margin-bottom: 56px;
+
+    &__left-part {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        color: #292F36;
+    }
+
+    &__right-part {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #292F36;
+        gap: 40px;
+    }
+}
+
+.main {
+    background-image: url(images/Images1_1.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 208px;
+    padding-bottom: 252px;
+    background-size: inherit;
+    margin: 0px 360px 96px 360px;
+    border-radius: 70px;
+    padding-left: 52px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__header {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        color: #292F36;
+
+    }
+
+    &__text {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: #4D5053;
+
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        padding: 26px 37px 26px 48px;
+        gap: 10px;
+        width: 220px;
+        height: 75px;
+        background: #292F36;
+        box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+        border-radius: 18px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.our__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &__header {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #292F36;
+        margin-left: 144px;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #4D5053;
+        margin-bottom: 92px;
+
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__discription {
+            width: 552px;
+
+            &__head {
+                font-family: 'DM Serif Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 125%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.02em;
+                color: #292F36;
+
+            }
+
+            &__text {
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 150%;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.01em;
+                color: #4D5053;
+            }
+        }
+    }
+
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 75px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+}
+
+.counter {
+    background: #F4F0EC;
+    display: flex;
+    justify-content: space-between;
+    padding: 152px 420px 200px 420px;
+    margin-bottom: 96px;
+
+    &__block {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    &__number {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #CDA274;
+    }
+
+    &__text {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.01em;
+        color: #4D5053;
+    }
+}
+
+.blog__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+
+    &__head {
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #292F36;
+    }
+
+    &__text {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #4D5053;
+    }
+}
+
+.blog__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    margin-bottom: 96px;
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E7E7E7;
+        filter: drop-shadow(0px 10px 30px rgba(255, 255, 255, 0.25));
+        border-radius: 62px;
+        box-sizing: border-box;
+    }
+
+    &__head {
+        margin-top: 20px;
+        margin-bottom: 32px;
+        font-family: 'DM Serif Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 125%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #292F36;
+
+    }
+
+    &__discription {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 120px;
+
+    &__text {
+        // margin-top: 20px;
+        margin-bottom: 32px;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #4D5053;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+
+    }
+
+
+    &__pages {
+        margin-left: 96px;
+
+        &__head {
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 125%;
+            display: flex;
+            align-items: center;
+            color: #292F36;
+            margin-bottom: 8px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__contacts {
+        &__head {
+            font-family: 'DM Serif Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 125%;
+            display: flex;
+            align-items: center;
+            color: #292F36;
+            margin-bottom: 24px;
+        }
+
+        &__address {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #4D5053;
+        }
+
+        &__mail {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #4D5053;
+        }
+
+        &__phone {
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.01em;
+            color: #4D5053;
+        }
+    }
+
+}
+
+.hw__button {
+    margin-bottom: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #292F36;
+    box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+    border-radius: 18px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
+
+    &__button {
+        padding: 8px 12px;
+        background: #292F36;
+        box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+        border-radius: 18px;
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+}
