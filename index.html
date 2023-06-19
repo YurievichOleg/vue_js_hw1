@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- Сначала не правильно понял задание и сделал все на js -->
     <div class="top center">
 
         <header class="head center2">
@@ -69,10 +70,16 @@
                 <li class="list__li li1">Элемент 1</li>
                 <li class="list__li li2">Элемент 2</li>
             </ul>
+            <button class="list__button">Добавить</button>
             <div id="vue__button">
                 <button @click="changeText()" class="hw__button"> {{text}}</button>
+                <ul class="list list__vue">
+                    <li v-for="item in listItem" :key="item.id" class="list__li list__vue li1_1">
+                        {{item}}</li>
+                </ul>
+                <button @click="addList()" class="list__button button__vue">Добавить</button>
             </div>
-            <button class="list__button">Добавить</button>
+
             <div class="our__projects__text__block">
                 <h3 class="our__projects__header">
                     Follow Our Projects
@@ -186,11 +193,18 @@
             el: '#vue__button',
             data: {
                 text: 'Перевернуть',
+
+                listItem: ['Элемент'],
+                liParent: document.querySelector('.li1_1').parentElement,
             },
             methods: {
                 changeText() {
                     this.text = this.text.split("").reverse().join("");
-                }
+                },
+                addList() {
+                    this.listItem.push('Новый элемент');
+                },
+
             }
         })
 
