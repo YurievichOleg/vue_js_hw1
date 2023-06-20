@@ -30,6 +30,124 @@ ul {
   padding-right: calc(50% - 600px);
 }
 
+.baner {
+  background-image: url("images/contentBlog/contentBlog.svg");
+  height: 356px;
+  margin-bottom: 200px;
+  position: relative;
+}
+.baner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 250px);
+  background: #FFFFFF;
+  border-radius: 37px 37px 0px 0px;
+}
+.baner__content__header {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  color: #292F36;
+  margin-top: 40px;
+}
+.baner__content__links {
+  margin-bottom: 40px;
+}
+
+.post {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  color: #292F36;
+  margin-bottom: 48px;
+}
+
+.latest__post {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 172px;
+}
+.latest__post__img {
+  background: #C4C4C4;
+  border-radius: 50px;
+}
+.latest__post__discription__head {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #292F36;
+  margin-top: 52px;
+  margin-bottom: 24px;
+}
+.latest__post__discription__text1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4D5053;
+  margin-bottom: 36px;
+}
+.latest__post__discription__text2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4D5053;
+  margin-bottom: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #292F36;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.top {
+  overflow: hidden;
+}
+
+.center {
+  padding-left: calc(50% - 960px);
+  padding-right: calc(50% - 960px);
+}
+
+.center2 {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .head {
   display: flex;
   gap: 780px;
@@ -276,6 +394,7 @@ ul {
   filter: drop-shadow(0px 10px 30px rgba(255, 255, 255, 0.25));
   border-radius: 62px;
   box-sizing: border-box;
+  padding: 28px;
 }
 .blog__content__head {
   margin-top: 20px;
@@ -301,6 +420,8 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 120px;
+  gap: 160px;
+  justify-items: center;
 }
 .footer__text {
   margin-bottom: 32px;

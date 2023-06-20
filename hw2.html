@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:ital,wght@0,500;1,500&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center" id="app">
+        <div v-for="product in products" :key="product.id">
+
+            <h2>{{product.name}}: <span>{{product.price}}</span></h2>
+
+
+        </div>
+        <button @click="sorting()" v-if="sortBoolean"> Отсортировать по возрастанию</button>
+        <button @click="sorting()" v-else="!sortBoolean"> Отсортировать по убыванию</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        // Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить пользователю возможность сортировать товары по цене (по возрастанию и по убыванию).
+        new Vue({
+            el: '#app',
+            data: {
+                sortBoolean: true,
+                products: [
+                    {
+                        name: 'Product 1',
+                        price: 100
+                    },
+                    {
+                        name: 'Product 2',
+                        price: 200
+                    },
+                    {
+                        name: 'Product 3',
+                        price: 300
+                    }
+                ]
+            },
+            methods: {
+                sorting() {
+                    if (this.sortBoolean) {
+                        this.products.sort((prev, next) => prev.price - next.price);
+                        this.sortBoolean = false;
+                    } else {
+                        this.products.sort((prev, next) => next.price - prev.price);
+                        this.sortBoolean = true;
+                    }
+
+                },
+            },
+        })
+    </script>
+</body>
+
+</html>
