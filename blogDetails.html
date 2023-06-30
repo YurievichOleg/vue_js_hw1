@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDetails</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:ital,wght@0,500;1,500&family=Lato:wght@300;400;700;900&family=Open+Sans:wght@600;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top center" id="blogDetails">
+        <!-- <dateContent></dateContent>
+        <content1></content1> -->
+        <!-- <img src="images/blogDetails/blogDeatails1.svg" alt=""> -->
+        <main-headerblog></main-headerblog>
+        <div class="blog center2">
+            <div class="blogDetails">
+                <div class="blogDetails__content">
+                    <h2 class="blogDetails__content__head">
+                        Let’s Get Solution for Building<br>
+                        Construction Work
+                    </h2>
+                    <!-- <img class="blogDetails__img" src="images/blogDetails/blogDeatails1.svg" alt="photo">
+                    <div class="blogDetails__date">
+                        <p class="blogDetails__date__date">26 December,2022 </p>
+                        <div class="blogDetails__links">
+                            <a href="#">Interior / </a>
+                            <a href="#">Home / </a>
+                            <a href="#">Decore</a>
+                        </div>
+                    </div> -->
+                    <!-- <content1></content1> -->
+                    <!-- <div class="blogDetails__discription">
+                        <p class="blogDetails__discription__text text1">
+                            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere
+                            in.Contrary
+                            to popular belief.There are many variations of passages of Lorem Ipsum available, but
+                            the
+                            majority have suffered alteration in some form, by injecthumour, or randomised words
+                            which
+                            don't look even slightly believable.
+                        </p>
+                        <p class="blogDetails__discription__text text2">
+                            Embarrassing hidden in the middle of text. All the
+                            Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                        </p>
+                    </div> -->
+                    <main-article :image="articleContent[0]" :own="articleContent[1]"
+                        :additional="articleContent[2]"></main-article'>
+                        <div class="quotes">
+                            <h3 class="quotes__head">
+                                “
+                            </h3>
+                            <h3 class="quotes__text">
+                                The details are not the details.<br>
+                                They make the design.
+                            </h3>
+                        </div>
+                </div>
+                <div class="blogDetails__content content2">
+                    <h2 class="blogDetails__content__head">
+                        Design sprints are great
+                    </h2>
+                    <div class="blogDetails__discription">
+                        <p class="blogDetails__discription__text content2__text1">
+                            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere
+                            in.Contrary
+                            to popular belief.There are many variations of passages of Lorem Ipsum available, but
+                            the
+                            majority have suffered.
+                        </p>
+                        <!-- <ol class="blogDetails__ol">
+                            <li class="blogDetails__lists">
+                                Contrary to popular belief.There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered.
+                            </li>
+                            <li class="blogDetails__lists">
+                                Contrary to popular belief.There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered.
+                            </li>
+                            <li class="blogDetails__lists">
+                                Contrary to popular belief.There are many variations of passages of Lorem Ipsum
+                                available, but the majority have suffered.
+                            </li>
+                        </ol> -->
+
+                        <blog-details></blog-details>
+
+                    </div>
+                    <!-- <img src="images/blogDetails/blogDetails2.svg" alt="photo"> -->
+                    <!-- <p class="blogDeatails__discription__text content2__text2">
+                        Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to
+                        popular belief.There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered.
+                    </p> -->
+                    <!-- <text-component></text-component> -->
+                    <spare-article :image1="articleContent2[0]" :own="articleContent2[1]"></spare-article>
+                </div>
+            </div>
+            <!-- <div class="sideBar">
+                <h3 class="sideBar__head">Tags</h3>
+
+                <div class="sideBar__buttons">
+                    <button class="sideBar__button">Kitchen</button>
+                    <button class="sideBar__button">Bedroom</button>
+                </div>
+                <div class="sideBar__buttons">
+                    <button class="sideBar__button">Building</button>
+                    <button class="sideBar__button">Architecture</button>
+                </div>
+                <div class="sideBar__buttons">
+                    <button class="sideBar__button">Kitchen Planning</button>
+                    <button class="sideBar__button">Bedroom</button>
+                </div>
+
+
+            </div> -->
+            <!-- <side-bar></side-bar> -->
+
+
+
+            <div class="sideBar">
+                <h3 class="sideBar__head">Tags</h3>
+                <div class="sideBar__buttons">
+                    <button-element :text="tagsNames1[0]" :meth="kitchen"></button-element>
+                    <button-element :text="tagsNames1[1]" :meth="bedroom"></button-element>
+                    <button-element :text="tagsNames1[2]" :meth="kitchen"></button-element>
+                    <button-element :text="tagsNames1[3]" :meth="kitchen"></button-element>
+                    <button-element :text="tagsNames1[4]" :meth="kitchen"></button-element>
+                    <button-element :text="tagsNames1[5]" :meth="bedroom"></button-element>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div class="sideBar">
+                <h3 @click="Kitchen" class="sideBar__head">Tags</h3>
+
+                <div class="sideBar__buttons">
+                    <button-element v-for="text in tagsFirstLine" :key="text.id" :text="text.name" :meth="text.med">
+                    </button-element>
+                </div>
+                <div class="sideBar__buttons">
+                    <button-element @click="Kitchen" v-for="text in tagsSecondLine" :key="text.id" :text="text"
+                        :meth="Kitchen"></button-element>
+                </div>
+                <div class="sideBar__buttons">
+                    <button-element v-for="text in tagsThirdLine" :key="text.id" :text="text"
+                        :meth="met"></button-element>
+                </div>
+
+
+
+            </div> -->
+
+        <main-footer></main-footer>
+    </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="headerBlog.js"></script>
+    <script src="footerBlog.js"></script>
+    <script src="blogDeatails.js"></script>
+
+    <script>
+        new Vue({
+            el: "#blogDetails",
+            data: {
+                tagsNames: [['Kitchen', 'Bedroom'], ['Building', 'Architecture'], ['Kitchen Planning', 'Bedroom']],
+                tagsNames1: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom'],
+                // tagsFirstLine: [{ name: 'Kitchen', med: 'Kitchen' }, { name: 'Bedroom', med: 'Kitchen ' }],
+                // tagsSecondLine: ['Building', 'Architecture'],
+                // tagsThirdLine: ['Kitchen Planning', 'Bedroom'],
+
+                articleContent: ['images/blogDetails/blogDeatails1.svg', `Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.`, `Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.`],
+                articleContent2: ['images/blogDetails/blogDetails2.svg', `Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.`, `Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.`],
+                kitchenArticle: ['images/blogDetails/blogDeatails1.svg', `kitchenArticle Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.`, `kitchenArticle Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.`],
+                bedroomArticle: ['images/blogDetails/blogDetails2.svg', `bedroomArticle Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.`, `bedroomArticleEmbarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.`],
+
+
+            },
+            methods: {
+                kitchen() {
+                    this.articleContent = this.kitchenArticle;
+                    this.articleContent2 = this.bedroomArticle;
+                    console.log('kitchen');
+
+                },
+                bedroom() {
+                    this.articleContent = this.bedroomArticle;
+                    this.articleContent2 = this.kitchenArticle;
+                    console.log('bedroom');
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>

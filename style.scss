@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'blog';
+@import 'blogDetails';
 
 * {
     margin: 0;
@@ -24,6 +25,10 @@ ul {
     list-style-type: none;
 }
 
+ol {
+    // list-style-type: none;
+}
+
 .top {
     overflow: hidden;
 }
@@ -36,6 +41,24 @@ ul {
 .center2 {
     padding-left: calc(50% - $widthContent / 2);
     padding-right: calc(50% - $widthContent / 2);
+}
+
+.center3 {
+    padding-left: calc(50% - $widthContentLittle / 2);
+    padding-right: calc(50% - $widthContentLittle / 2);
+}
+
+a:hover {
+    color: #CDA274;
+}
+
+button:hover {
+    color: #CDA274;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: black;
 }
 
 .head {
