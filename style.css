@@ -126,6 +126,12 @@ ul {
   margin-bottom: 48px;
 }
 
+.blog__banner {
+  background-image: url(images/blogDetails/blogDetailsBanner.svg);
+  height: 350px;
+  margin-bottom: 200px;
+}
+
 .blogDetails {
   max-width: 800px;
 }
